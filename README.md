@@ -20,10 +20,9 @@ https://github.com/user-attachments/assets/00153c53-4105-4a32-88af-c79abb4d0fe7
 * **3열(Depth) 충돌 처리**
   2D 환경이지만 3열의 깊이(depth)를 가지고 있어, 각 열마다 독립적인 충돌 처리가 이루어집니다.
 * **세부 사항**
-  ![image](https://github.com/user-attachments/assets/24b97086-828a-4092-a788-f0b3b16133ab)
   - 좀비 콜라이더는 polygon2d를 사용했으며 다른 좀비의 등을 잘오르게 하기 위해 콜라이더 모양을 변형했습니다.
-  - 성능 최적화를 위해 spriteAtlas, 오브젝트 풀링 등 활용
-  - 
+    ![image](https://github.com/user-attachments/assets/24b97086-828a-4092-a788-f0b3b16133ab)
+  - 성능 최적화를 위해 spriteAtlas, 오브젝트 풀링 등 활용    
 
 ### Priority 2: 플레이어 공격 및 데미지 처리
 
