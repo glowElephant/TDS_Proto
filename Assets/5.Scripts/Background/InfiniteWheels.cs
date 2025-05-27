@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// ¹ÙÄû È¸Àü °ü·Ã Å¬·¡½º
+/// ë°”í€´ íšŒì „ ê´€ë ¨ í´ë˜ìŠ¤
 /// </summary>
 public class InfiniteWheels : MonoBehaviour
 {
