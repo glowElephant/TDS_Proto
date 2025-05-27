@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hero
+  - Zombie
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -11,11 +14,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - ZombiePos1
+  - ZombiePos2
+  - ZombiePos3
+  - Wall
+  - Bullet
   - 
   - 
   - 
@@ -40,4 +43,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ZombiePos3
+    uniqueID: 3553615285
+    locked: 0
+  - name: ZombiePos2
+    uniqueID: 2014576103
+    locked: 0
+  - name: ZombiePos1
+    uniqueID: 1002148201
     locked: 0
