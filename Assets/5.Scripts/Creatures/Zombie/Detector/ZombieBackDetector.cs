@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// 좀비 뒤쪽에 붙어있는 콜라이더를 통해 뒤쪽에 좀비가 있는지 탐지
+/// </summary>
 public class ZombieBackDetector : MonoBehaviour
 {
     private Zombie overlappingZombie;

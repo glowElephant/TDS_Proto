@@ -1,6 +1,9 @@
 ﻿using System;
 using UnityEngine;
 
+/// <summary>
+/// 좀비의 앞, 아래, 뒤를 탐지하여 앞에있는 좀비를 타고 오를 수 있도록 제어하는 컨트롤러
+/// </summary>
 public class ZombieDetectorController : MonoBehaviour
 {
     [SerializeField] private ZombieFrontDetector frontDetector;

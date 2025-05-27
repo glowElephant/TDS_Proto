@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// 바퀴 회전 관련 클래스
+/// </summary>
 public class InfiniteWheels : MonoBehaviour
 {
     [SerializeField] private float scrollSpeed = 2f;

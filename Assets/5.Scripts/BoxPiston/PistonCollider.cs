@@ -69,6 +69,7 @@ public class PistonCollider : MonoBehaviour
         {
             for (int i = 0; i < bodys.Count; i++)
             {
+                // 1층 첫번째 좀비 제외 나머지 좀비는 간격을 더 벌리기위해 랜덤값을 추가
                 if (i == 0)
                 {
                     bodys[i].velocity = Vector2.right * pistonSpeed;
@@ -88,6 +89,9 @@ public class PistonCollider : MonoBehaviour
         IsActivated = false;
     }
 
+    /// <summary>
+    /// 좀비 뒤쪽 backCollider에 연결되어있는 좀비리스트 반환
+    /// </summary>
     private List<Transform> GetChainZombie()
     {
         if (targetZombie == null)

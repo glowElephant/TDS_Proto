@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 좀비를 생성하고 관리하는 스포너 클래스
+/// </summary>
 public class ZombieSpawner : MonoBehaviour
 {
     [SerializeField] private Transform[] spawnPositions;

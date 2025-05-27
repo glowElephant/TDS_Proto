@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// 총을 제어하는 클래스, 마우스 방향 바라보기, 발사 등 기능 구현
+/// </summary>
 public class GunController : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;

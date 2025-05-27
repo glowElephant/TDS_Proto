@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// 움직이는 background를 구현하는 클래스
+/// </summary>
 public class InfiniteBackground : MonoBehaviour
 {
     [SerializeField] private Transform[] panels;

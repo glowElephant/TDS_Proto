@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private float lifeTime = 2f;

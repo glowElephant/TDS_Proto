@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 좀비들을 풀링하여 재사용하는 풀 클래스
+/// </summary>
 public class ZombiePool : MonoBehaviour
 {
     private readonly Stack<GameObject> zombiePool = new Stack<GameObject>();

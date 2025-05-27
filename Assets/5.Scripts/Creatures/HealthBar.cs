@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// 체력을 표시하는 HealthBar SpriteRenderer를 활용
+/// </summary>
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer foreground;
@@ -10,16 +13,12 @@ public class HealthBar : MonoBehaviour
     {
         if (foreground == null)
         {
-            Debug.LogError("HealthBar: Foreground SpriteRenderer를 연결하세요!");
             return;
         }
         initialWidth = foreground.transform.localScale.x;
         SetHealthRatio(1f);
     }
 
-    /// <summary>
-    ///  체력 비율(current / max)을 0~1로 받아서 Foreground 스케일을 조절
-    /// </summary>
     public void SetHealthRatio(float ratio)
     {
         ratio = Mathf.Clamp01(ratio);

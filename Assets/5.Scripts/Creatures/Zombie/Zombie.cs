@@ -7,7 +7,9 @@ public enum ZombieState
     Die
 }
 
-[RequireComponent(typeof(Animator))]
+/// <summary>
+/// 좀비 메인 클래스로 좀비의 상태를 관리하고, 애니메이션과 상호작용을 처리
+/// </summary>
 public class Zombie : Creature
 {
     public ZombieDetectorController detectorController;
