@@ -87,7 +87,7 @@ public class PistonCollider : MonoBehaviour
         yield return new WaitForSeconds(pistonDelay);
         IsActivated = false;
     }
-    int count = 0;
+
     private List<Transform> GetChainZombie()
     {
         if (targetZombie == null)
@@ -98,10 +98,8 @@ public class PistonCollider : MonoBehaviour
         List<Transform> chainZombies = new List<Transform>();
 
         var zombie = targetZombie.GetComponent<Zombie>();
-        count++;
         while (zombie != null)
         {
-            zombie.name = count.ToString();
             chainZombies.Add(zombie.transform);
             zombie = zombie.detectorController.DetectChainZombie();
         }
