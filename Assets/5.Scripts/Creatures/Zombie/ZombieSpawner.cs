@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -9,6 +10,11 @@ public class ZombieSpawner : MonoBehaviour
     [SerializeField] private Transform[] spawnPositions;
     [SerializeField] private ZombiePool zombiePool;
     [SerializeField] private Queue<GameObject> activeZombies = new Queue<GameObject>();
+
+    private void Start()
+    {
+        StartCoroutine(AutoSpawnZombie());
+    }
 
     private void SpawnZombie()
     {
@@ -28,13 +34,12 @@ public class ZombieSpawner : MonoBehaviour
         activeZombies.Enqueue(zombie);
     }
 
-    private void Update()
+    private IEnumerator AutoSpawnZombie()
     {
-        
-        if (Input.GetKeyDown(KeyCode.S)) SpawnZombie();
-        if (Input.GetKeyDown(KeyCode.D))
+        while (true)
         {
-            zombiePool.DeleteZombie(activeZombies.Dequeue());
+            SpawnZombie();
+            yield return new WaitForSeconds(1.5f); // 1초마다 좀비 생성
         }
     }
 }
